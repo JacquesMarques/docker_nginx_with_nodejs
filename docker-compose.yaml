@@ -27,8 +27,8 @@ services:
     volumes:
       - ./mysql:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=nodedb
+      - MYSQL_ROOT_PASSWORD=root
     ports:
       - "3306:3306"      
     networks:
